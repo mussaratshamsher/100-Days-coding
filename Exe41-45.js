@@ -27,15 +27,10 @@ function show_magician(magicians) {
         console.log(magician);
     });
 }
-show_magician(magicians);
-/*function make_great(magicians:string[]){
-    for (let i = 0; i < magicians.length; i++) {
-        magicians[i] = "The Great" + magicians[i];
-    }
-};
-make_great(magicians); // Modifies the prigional Array
-show_magicians(magicians); // shows modified Array */
+show_magician(magicians); // shows modified Array
 console.log("Exe: 43"); //Exe:43
+//Call the function make_great() with a copy of the array of magicians’ names. 
+//Because the original array will be unchanged, return the new array and store it in a separate array.
 function show_magicians(magicians) {
     magicians.forEach(magician => {
         console.log(magician);
@@ -54,6 +49,8 @@ show_magicians(magicians); // origional list with show magician function
 console.log("Great magicains:");
 show_magicians(greatMagicians); // modified list
 console.log("Exe:44"); // Exe: 44
+// Write a function that accepts a array of items a person wants on a sandwich.
+//Call the function three times, using a different number of arguments each time.
 function make_sandwich(...items) {
     console.log(`Make a sandwich with:
     ${items.join(', ')} `);
@@ -62,6 +59,8 @@ make_sandwich("cheese", "chicken");
 make_sandwich("turkey", "lettuce", "tomato");
 make_sandwich("avocado", "sprotus", "mustard", "mayo");
 console.log("Exe:45"); // Exe:45
+// Write a function that stores information about a car in a Object
+//Call the function with the required information and two other name-value pairs, such as a color or an optional feature
 function make_car(manufacturer, model, otherFeatures) {
     return {
         manufacturer, model, ...otherFeatures

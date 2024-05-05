@@ -10,7 +10,7 @@ let laptop = {
         console.log(`This laptop is ${this.make} ${this.model} ${this.year}.`);
     }
 };
-laptop.describe();
+laptop.describe(); //calling object to output of properties in a sentence
 console.log("Exe:47"); // Exe:47
 // Advanced destructing Array
 let laptops = [
@@ -52,11 +52,11 @@ function rectangularArea(height, width) {
 }
 // refactorizing into arrow function
 let rectangularAreaArrow = (height, width) => {
-    height * width;
+    console.log(height * width);
 };
 // arguments to check result
-console.log(rectangularAreaArrow(5, 10));
-console.log(rectangularAreaArrow(4, 10));
+rectangularAreaArrow(5, 10);
+rectangularAreaArrow(4, 10);
 console.log("Exe:52"); //Exe:52
 // object for details of smartphone
 let smartPhone = {

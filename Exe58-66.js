@@ -8,17 +8,18 @@ function avg_score(...score) {
 }
 console.log(avg_score(20, 50, 38, 96, 47)); // log to get output
 console.log(avg_score(75, 80, 87, 90, 92));
-console.log("Exe:59"); //Exe:59
-/* program to  add special number
-function makeAdd(valueToAdd: number): (number) => number {
-    // funtion that take a number and adds special number to it
-    return function(number: number): number {
+console.log("Exe:59"); //Exe:59 
+//program to  add special number
+function makeAdder(valueToAdd) {
+    // This is the magic box. It takes a number and adds your special number to it
+    return function (number) {
         return number + valueToAdd;
     };
 }
-// Making a magic box that adds 6
-let addSix = makeAdd(6);
-console.log(addSix(10));*/
+// Making a magic box that adds 5
+let addFive = makeAdder(5);
+console.log(addFive(10)); // If we put 10 in the box, it gives us 15
+// We made a function (magic box) that adds 5 to any number.
 console.log("Exe:60"); // Exe:60
 // building a userProfile by object method
 // Method 1

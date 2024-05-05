@@ -6,18 +6,19 @@ function avg_score(...score: number []) : number {
 console.log(avg_score(20,50,38,96,47)); // log to get output
 console.log(avg_score(75, 80, 87, 90, 92));
 
-console.log("Exe:59") //Exe:59
-/* program to  add special number
-function makeAdd(valueToAdd: number): (number) => number {
-    // funtion that take a number and adds special number to it
-    return function(number: number): number {
-        return number + valueToAdd;
-    };
-}
-// Making a magic box that adds 6
-let addSix = makeAdd(6);
-console.log(addSix(10));*/
-
+console.log("Exe:59") //Exe:59 
+//program to  add special number
+function makeAdder(valueToAdd: number): (number: number) => number {
+        // This is the magic box. It takes a number and adds your special number to it
+        return function(number: number): number {
+            return number + valueToAdd;
+        };
+    }
+    
+    // Making a magic box that adds 5
+    let addFive = makeAdder(5);
+    console.log(addFive(10)); // If we put 10 in the box, it gives us 15
+    // We made a function (magic box) that adds 5 to any number.
 console.log("Exe:60") // Exe:60
 // building a userProfile by object method
 // Method 1
@@ -41,16 +42,16 @@ let userProfile= {
     user_profile.displayInfo(); // Asking the profile to tell about the user
 
     console.log("Exe:61") // Exe:61
-    // creating enum list
+    // creating enum list for vehicle
     enum VehicleType {
         Car,
         Truck,
         MotorBike
     } // showing one type of vehicle from list
-    console.log(VehicleType.Car); // shows zero result because enums count from zero
+    console.log(VehicleType.Car); // shows zero result because enums counts from zero
    
     console.log("Exe:62") // Exe:62
-// Creating bluePrint for Student Information
+// Create bluePrint for Student Information
 interface Student {
      name: string;
      age: number;

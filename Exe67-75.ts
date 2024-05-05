@@ -26,7 +26,7 @@ function divideAndRemainder(dividend: number , divisor:number):
       console.log("Exe:70")
       // function to print numbers from 1-5
 function numbersWithLet() {
-   for (let a = 1; a<= 5; a++) {
+   for (let a = 1; a<= 5; a++) { 
     console.log(a); // logs numbers 1-5
   }//a is not accessible outside the loop because it is defined with let
 }
@@ -65,7 +65,7 @@ function updateVariable() {
     let number = 7; // iniitally assigned value
     console.log("initial value:" , number) // logs initial value
     number = 10; // updated value
-    console.log("Updated value:" , number) // logs updated value
+    console.log("Updated value:" , number) // logs updated value 10
 };
 updateVariable(); //assigning value to variable here shows how can we update value
 
