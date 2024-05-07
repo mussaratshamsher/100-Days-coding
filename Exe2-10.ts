@@ -9,7 +9,7 @@ console.log(`Hello, ${personName} would you like to learn some Pythan today?`);
 let personname: string="Babar"
 console.log("lowercase:", personname.toLowerCase());
 //upper case
-console.log("upper case:", personname.toLocaleUpperCase());
+console.log("upper case:", personname.toUpperCase());
 //title case
 console.log("titlecase:", personname.replace(/\bw/g,c => c.toUpperCase()));
 

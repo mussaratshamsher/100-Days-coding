@@ -28,16 +28,15 @@ let squaringNumberExpression = function (number) {
 console.log(squaringNumberDeclaration(5)); // result for square of 5 by declaration
 console.log(squaringNumberExpression(5)); //shows result for square of 5 by expression
 console.log("Exe:79");
-/* creating & Accessing object properties
-// car object with properties make, model & year // access model property
-let car= {
-   make: "Toyota",
-   model: "Corolla",
-   year: 2020
-}
-console.log(car.model) // log to output of model */
+// creating & Accessing object properties
+// car object with properties make, model & year // access model property 
+let car1 = {
+    make: "Toyota",
+    model: "Corolla",
+    year: 2020
+};
+console.log("Model:", car1.model); // log to output of model 
 console.log("Exe:80");
-console.log("starting with Exe:0");
 let car = {
     make: "Toyota",
     model: "Corolla",
@@ -46,7 +45,7 @@ let car = {
 // adding key & value 'color' & updating year
 car.color = "black";
 car.year = 2021;
-console.log(car);
+console.log(car); // shows updated object detail
 console.log("Exe:81");
 //A function that takes an object as an argument and logs all of its properties and values.
 //This functon shows detail of an object
@@ -59,9 +58,9 @@ logObjectProperties({ make: "Toyota", model: "Corolla", year: 2021, color: "blue
 console.log("Exe:82");
 //function that takes a string as argument & returns the number of characters in the string.
 function stringLenght(str) {
-    return str.length;
+    return str.length; //returns the number of characters in the string.
 }
-console.log(stringLenght("Shaheer"));
+console.log(stringLenght("Shaheer")); // consoled string as argument
 console.log("Exe:83");
 // function to change string into uppercase & lowercase
 function changeCase(str) {

@@ -29,17 +29,16 @@ let squaringNumberExpression = function(number: number): number{
  console.log(squaringNumberExpression(5)); //shows result for square of 5 by expression
  
  console.log("Exe:79")
- /* creating & Accessing object properties
+ // creating & Accessing object properties
  // car object with properties make, model & year // access model property 
- let car= {
+ let car1= {
     make: "Toyota",
     model: "Corolla",
     year: 2020
  }
-console.log(car.model) // log to output of model */
+console.log("Model:", car1.model) // log to output of model 
 
 console.log("Exe:80")
-console.log ("starting with Exe:0")
 let car:any = {
     make: "Toyota",
     model: "Corolla",
@@ -48,7 +47,7 @@ let car:any = {
  // adding key & value 'color' & updating year
     car.color = "black";
     car.year = 2021;
-    console.log(car);
+    console.log(car);// shows updated object detail
 
     console.log("Exe:81")
 //A function that takes an object as an argument and logs all of its properties and values.
@@ -63,16 +62,16 @@ logObjectProperties({ make: "Toyota", model: "Corolla", year: 2021, color: "blue
 console.log("Exe:82")
 //function that takes a string as argument & returns the number of characters in the string.
 function stringLenght(str: string): number{
-    return str.length;
+    return str.length; //returns the number of characters in the string.
 }
-console.log(stringLenght("Shaheer"));
+console.log(stringLenght("Shaheer"));// consoled string as argument
 
 console.log("Exe:83")
 // function to change string into uppercase & lowercase
 function changeCase(str: string) {
     let upperCase = str.toUpperCase(); // converts in uppercase
     let lowerCase = str.toLowerCase(); // converts in lowercase
-    console.log("Uppercase:", upperCase, "\n LowerCase:", lowerCase)
+    console.log("Uppercase:", upperCase, "\n LowerCase:", lowerCase);
 }
 changeCase("Life is not bed of Roses.") // Example case
 

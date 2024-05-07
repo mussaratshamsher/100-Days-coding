@@ -44,14 +44,14 @@ let user_profile = (function () {
 })();
 user_profile.displayInfo(); // Asking the profile to tell about the user
 console.log("Exe:61"); // Exe:61
-// creating enum list
+// creating enum list for vehicle
 var VehicleType;
 (function (VehicleType) {
     VehicleType[VehicleType["Car"] = 0] = "Car";
     VehicleType[VehicleType["Truck"] = 1] = "Truck";
     VehicleType[VehicleType["MotorBike"] = 2] = "MotorBike";
 })(VehicleType || (VehicleType = {})); // showing one type of vehicle from list
-console.log(VehicleType.Car); // shows zero result because enums count from zero
+console.log(VehicleType.Car); // shows zero result because enums counts from zero
 console.log("Exe:62"); // Exe:62
 let student = {
     name: "Alisha",

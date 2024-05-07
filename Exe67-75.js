@@ -62,7 +62,7 @@ function updateVariable() {
     let number = 7; // iniitally assigned value
     console.log("initial value:", number); // logs initial value
     number = 10; // updated value
-    console.log("Updated value:", number); // logs updated value
+    console.log("Updated value:", number); // logs updated value 10
 }
 ;
 updateVariable(); //assigning value to variable here shows how can we update value
