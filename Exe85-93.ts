@@ -1,5 +1,6 @@
 console.log("Exe:85")
-//function to find index of string within a sentence
+//function to find index of a string within a sentence
+//index of method to find index of string
 function findCodingPosition(str: string): number{
     return str.indexOf("coding");
 }
@@ -8,7 +9,7 @@ console.log(findCodingPosition("Learn coding to be a Programmer."));
 
 console.log("Exe:86")
 //function that checks if the word "JavaScript" is present in a string
-// includes method is used to find Presence
+//includes method is used to find Presence
 function isJavaScript(str: string): boolean {
     return str.includes("JavaScript");
 }
@@ -57,7 +58,7 @@ console.log("modified Array of Fruits:",fruits1);// Array of modified fruits
 console.log("Exe:92")
 //function that removes & returns the last element of Array
 function removeLastElement<T>(arr:T[]): T | undefined{
-    return arr.pop(); //removes & returns last element of Aray
+    return arr.pop(); //removes & returns last element of Array
 }
 const fruit: string[] = ["Figs", "Grapefruit", "Apricot"];
 console.log(removeLastElement(fruit)); //shows output apricot
@@ -65,11 +66,11 @@ console.log(fruit) //shows modified array after removing last element
 
 console.log("Exe:93")
 //index of "Banana" in an array and replace it with "Mango".
-function replaceBananaWithMango(fruits: string[]): void{
-    const index = fruits.indexOf("Banana"); //finds banana's index
-    if (index !== -1) fruits[index] = "Mango"; // replace banana with mango
-}
-const fruIts:string[] = ["Apple","Grapes","Banana"];
-replaceBananaWithMango(fruIts); 
-console.log(fruIts);//output after replace
+// Making array of fruits including banana init
+const fruits: string[] = ["apple", "banana", "orange"];
 
+const bananaIndex: number = fruits.indexOf("banana");// gives index of Banana
+if (bananaIndex !== -1) {
+  fruits[bananaIndex] = "Mango"; // replaces banana with Mango
+}
+console.log(fruits); // Output: ["apple", "Mango", "orange"]
