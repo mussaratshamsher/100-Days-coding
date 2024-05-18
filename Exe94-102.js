@@ -5,24 +5,27 @@ console.log("Exe: 94");
 //definng Array
 const words = ["Governor", "Sindh", "IT", "Course"];
 // .map() to creat new array
-const lengths = words.map(word => word.length);
+const lengths = words.map(word => word.length); // gives new array
 console.log(lengths); //output array:[8, 5, 2, 6]
 console.log("Exe:95");
-//Functon: .filter() method to return an array of numbers greater than 10. 
+//Function: .filter() method to return an array of numbers greater than 10. 
 function filter(numbers) {
-    return numbers.filter(number => number > 10);
+    return numbers.filter(number => number > 10); //will return array of numbers greater than 10
 }
-const numbersArray = [5, 8, 11, 17, 20, 25, 32];
+const numbersArray = [5, 8, 11, 17, 20, 25, 32]; //Array of numbers
 console.log(filter(numbersArray)); //outPut:[11,17,20,25,32]
 console.log("Exe:96");
-function calculateSum(numbers) {
-    return numbers.reduce((accumulator, current) => accumulator + current, 0);
-}
-const digits = [1, 2, 3, 4, 5, 6];
-console.log(calculateSum(digits)); //shows a single number after adding all numbers
+// Demonstrate how to use the .reduce() method to calculate the sum of all numbers in an array.
+//making Array 
+const numbers = [1, 2, 3, 4, 5];
+//fuction to use .reduce() method
+const sum = numbers.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue; //will return sum of numbers of Array
+});
+console.log(sum); //log to get new Array of sum of numbers of array
 console.log("Exe:97");
 //function that returns the current date in "DD-MM-YYYY" format
-function currentDateFormate() {
+function CurrentDateFormate() {
     const date = new Date();
     const day = String(date.getDate()).padStart(2, '0');
     const month = String(date.getMonth() + 1).padStart(2, '0');
@@ -30,9 +33,9 @@ function currentDateFormate() {
     return `${day}-${month}-${year}`;
 }
 // shows todays date neatly & foramtted
-console.log(currentDateFormate());
+console.log(CurrentDateFormate());
 console.log("Exe:98");
-//Calcualte & logs how many days are left untill New Year.
+//Calcualte & log how many days are left untill New Year.
 function daysUntillNewYear() {
     const today = new Date();
     const newYear = new Date(today.getFullYear() + 1, 0, 1); //january of next year
@@ -61,13 +64,13 @@ console.log("Exe:100");
 const squareRoot = Math.sqrt(144);
 console.log(squareRoot); //ooutput 12
 console.log("Exe:101");
-//  Generate a random integer between 1 and 10
-function getRandomInt() {
-    return Math.floor(Math.random() * 10) + 1;
-}
+//Generate a random integer between 1 and 10
+let randomInteger = Math.floor(Math.random() * 10) + 1;
 // Outputs a random integer between 1 and 10
-console.log(getRandomInt());
+console.log(randomInteger);
 console.log("Exe:102");
-// Calculate and log the absolute difference between the number -5 and 5.
-const difference = Math.abs(5 - 5);
+//Calculate and log the absolute difference between the number -5 and 5.
+let num1 = -5;
+let num2 = 5;
+const difference = Math.abs(num1 - num2);
 console.log(difference);

@@ -1,5 +1,5 @@
 console.log("Exe:103")
-//returns a random boolean value, true or false.
+//funciton that returns a random boolean value, true or false.
 function getRandomBoolean(): boolean {
     return Math.random() > 0.5; 
     //Returns true if the random number is greater than 0.5 
@@ -9,7 +9,6 @@ console.log(getRandomBoolean());
 
 console.log("Exe:104")
 // Create a function that generates a random hexadecimal color code.
-
 function getRandomHexColor():string {
     const color = '#' + Math.floor(Math.random() * 0xFFFFFF).toString(16).padStart(6, '0');
     return color; // returns random color code
