@@ -69,7 +69,8 @@ const currentHour = currentTime.getHours();
 
 if (currentHour < 12) {
   console.log("Good Morning");
-}
+};
+
  console.log("Exe:110")
 //Create a function that assigns a grade (A, B, C, D, F) based on a student's score.
 //else if function for assinging grades

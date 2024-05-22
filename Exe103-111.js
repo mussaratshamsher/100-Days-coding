@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 console.log("Exe:103");
-//returns a random boolean value, true or false.
+//funciton that returns a random boolean value, true or false.
 function getRandomBoolean() {
     return Math.random() > 0.5;
     //Returns true if the random number is greater than 0.5 
@@ -65,6 +65,7 @@ const currentHour = currentTime.getHours();
 if (currentHour < 12) {
     console.log("Good Morning");
 }
+;
 console.log("Exe:110");
 //Create a function that assigns a grade (A, B, C, D, F) based on a student's score.
 //else if function for assinging grades
