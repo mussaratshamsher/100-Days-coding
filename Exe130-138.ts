@@ -1,4 +1,4 @@
-
+//Exe#130-138
 console.log('Exe:130')
 //Explain how to export a function from one JavaScript file and import it into another file.
 export let exportFunction=  ()=> {
@@ -73,7 +73,7 @@ try {
     // Code that may potentially throw an error
     const result = Function(); // Assuming, this function may throw an error
   
-    //Continues execution of the code if no error occurred
+    //Continues execution of the code if no eror occurred
     console.log(result);
   } catch (error) {
     //Handles the error here
