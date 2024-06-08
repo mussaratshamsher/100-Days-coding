@@ -26,7 +26,7 @@ countrycapitalMap.set('Canada', 'Ottawa');
 //We can access single value by get() or has() to console
 console.log(countrycapitalMap.get('Canada'));
 console.log("\n Exe:114");
-//ceating variable for map
+//creating variable for map
 const studentsMap = new Map();
 //using set() will add key-value to map object
 studentsMap.set(123, "Ali");
@@ -140,3 +140,4 @@ const favMovies = ["3 idiots", "Tare Zameen par", "The wicked witch", "Voyage, T
 for (const movie of favMovies) {
     console.log(movie);
 }
+;

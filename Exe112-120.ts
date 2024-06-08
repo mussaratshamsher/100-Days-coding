@@ -27,7 +27,7 @@ countrycapitalMap.set('Canada', 'Ottawa');
 console.log(countrycapitalMap.get('Canada'));
 
 console.log("\n Exe:114")
-//ceating variable for map
+//creating variable for map
 const studentsMap = new Map();
 //using set() will add key-value to map object
 studentsMap.set(123, "Ali");
