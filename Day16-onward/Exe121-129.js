@@ -23,7 +23,7 @@ console.log("\n Exe123");
 //Create a loop that iterates through a string and stops when it finds the first vowel.
 function findFirstVowel(str) {
     const vowels = ['a', 'e', 'i', 'o', 'u']; //vowels to check in string
-    for (let i = 0; i < str.length; i++) {
+    for (let i = 0; i < str.length; i++) { //iterates loop through string
         const currentChar = str[i].toLowerCase();
         if (vowels.includes(currentChar)) {
             return currentChar; //returns first vowel
