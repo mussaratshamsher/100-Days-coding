@@ -1,7 +1,7 @@
 console.log('Exe: 139 ');
 //Q: List three reserved words in JavaScript and create a valid use case for each.
 
-//1.'function': used to define a new function in javascript.
+//function: used to declare a new function
 function addNumbers( a:number, b :number){
     console.log(a+b);
 }
@@ -31,6 +31,7 @@ console.log('Exe: 141 ');
 
 //The `await` reserved word in asynchronous JavaScript is significant as it plays a crucial role in dealing with promises and async operations. 
 //It is used only within async functions and allows for more readable and concise code when working with promises.
+
 //Here are some key significances of the `await` keyword:
 //1.Awaits Promise Resolution 2. Simplifies Async Flow 3. Error Handling 4. Sequential Execution 5. Compatibility with Promises 
 

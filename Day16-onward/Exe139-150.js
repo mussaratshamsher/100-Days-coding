@@ -6,6 +6,7 @@ console.log('Exe: 139 ');
 function addNumbers(a, b) {
     console.log(a + b);
 }
+addNumbers(2, 4);
 //2. 'let' : used to declare a block-scoped variables in javascript
 let message = "Hello, world!";
 console.log(message);
@@ -13,6 +14,7 @@ console.log(message);
 function multiplyNum(a, b) {
     return a * b;
 }
+multiplyNum(3, 4);
 console.log('Exe: 140 ');
 //Q: Explain the error that occurs when trying to use a reserved word as a variable name.
 //When we try to use a reserved word as a variable name in TypeScript, it results in a syntax error.
