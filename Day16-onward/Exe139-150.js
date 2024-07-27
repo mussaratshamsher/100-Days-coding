@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 console.log('Exe: 139 ');
 //Q: List three reserved words in JavaScript and create a valid use case for each.
-//1.'function': used to define a new function in javascript.
+//function: used to declare a new function
 function addNumbers(a, b) {
     console.log(a + b);
 }
