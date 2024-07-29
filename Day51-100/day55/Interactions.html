@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Interactions  </title> </head>
+    <body>
+        <script>
+            //1.alert: shows message & waits for the user to press "OK".
+            alert("Hello");
+            //2. Prompt:shows a message asking the user to input text. It returns the text or, if Cancel button or Esc is clicked, null.
+            //prompt accepts two arguments
+            result = prompt(title,  value);
+//title: the text to show the visitor
+//default/value: optional second parameter,the initial value for the input field
+let age = prompt('How old are you?', 100);
+alert(`You are ${age} years old!`);
+//the second parameter is optional, but if we don't supply it, internet Explorer will insert the text "undefined" into the prompt
+let test = prompt("Test");
+alert(test);
+let test1 = prompt("Test", '')
+alert(test1);
+//3. confirm: shows a message and waits for the user to press “OK” or “Cancel”. It returns true for OK and false for Cancel/Esc.
+//the function confirm shows a modal window with a question & 2 buttons: OK & Cancel
+result = confirm(question);
+let isBoss = confirm("Are you the boss?");
+alert(isBoss);
+</script> 
+</body>
+</html>
+

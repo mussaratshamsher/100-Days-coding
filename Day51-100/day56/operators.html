@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Basic Operators, maths </title> </head>
+        <body>
+        <script>
+            //unary operator: An operator is unary if it has a single operand
+//negation: reverses the sign of the number
+let x = 1;
+x = -x;
+alert(x);
+//binary operator: An operator is binary if it has two operands.
+let y = 1;
+let z = 4;
+alert(z-y)
+//Maths operations:
+//Addition +
+//Subtraction -
+//Multiplication *
+// Division /
+// Remainder %
+// Exponentiation **
+
+//Remainder %
+alert( 5 % 2 ); // 1, the remainder of 5 divided by 2
+alert( 8 % 3 ); // 2, the remainder of 8 divided by 3
+
+//Exponentiation **
+alert( 2 ** 2 ); // 2² = 4
+alert( 2 ** 3 ); // 2³ = 8
+
+//String concatenation with binary +
+//The binary + is the only operator that supports strings in such a way.
+//number defined using string will be combined with the number
+
+let s = "my" + "string";
+alert('1' + 2); //12
+alert(2+ '1'); //21
+alert('1'+ 2+2) //14
+alert(2+2 + '1') //41
+
+//Subtraction & division are performed same as without quotes
+alert(6 - '2');
+alert('6' -2);
+//Numeric conversion, unary +
+// The plus + exists in two forms: the binary form that we used above and the unary form.
+
+// The unary plus or, in other words, the plus operator + applied to a single value, doesn’t do anything to numbers. 
+// But if the operand is not a number, the unary plus converts it into a number.
+//No effect on nembers
+let a = 1;
+alert( +a);
+let b = -2;
+alert( +b);
+//converts non-numbers
+alert( +true); //1
+alert( +"");  //0
+
+//The binary plus would add numbers as strings:
+let apples = "2";
+let oranges = "3";
+alert(apples + oranges); //23
+//If we want to treat them as numbers, we need to convert and then sum them:
+alert( +apples + +oranges); //5
+
+//Assignment operatpr: an assignment = is also an operator. 
+let xy = 2 * 2 + 1;
+alert(xy); //5
+
+//Assignment = returns a value:All operators in JavaScript return a value. That’s obvious for + and -, but also true for =.
+let ab = 1; bc = 2; 
+let abc = 3 (ab = bc + 1);
+alert(ab); //3
+alert(bc) ; //0
+//Chaining assignments : Another interesting feature is the ability to chain assignments:
+let g, h, i;
+g = h = i = 2 + 2;
+alert(g);  //4
+alert(h);  //4
+alert(i);  //4
+
+//Modify-in-place
+//let n = 2; n = n + 5; n = n * 2;
+//This notation can be shortened using the operators += and *=:
+
+let n = 2;
+n += 5; // now n = 7 (same as n = n + 5)
+n *= 2; // now n = 14 (same as n = n * 2)
+alert( n ); // 14
+let m = 2;
+
+m *= 3 + 5; // right part evaluated first, same as n *= 8
+
+alert( m ); // 16
+//Increment/ decrement: Increasing or decreasing a number by one is among the most common numerical operations.
+//Increment ++ increases a variable by 1:
+
+let counter = 2;
+counter++;        // works the same as counter = counter + 1, but is shorter
+alert( counter ); // 3
+//Decrement -- decreases a variable by 1:
+
+let counter1 = 2;
+counter1--;        // works the same as counter = counter - 1, but is shorter
+alert( counter1 ); // 1
+
+//Increment/decrement among other operators
+let counter3 = 1;
+alert( 2 * ++3 ); //4
+//Bitwise operators
+// These operators are not JavaScript-specific. They are supported in most programming languages.
+// The list of operators:
+
+// 1. AND ( & )
+// 2. OR ( | )
+// 3. XOR ( ^ )
+// 4. NOT ( ~ )
+// 5. LEFT SHIFT ( << )
+// 6. RIGHT SHIFT ( >> )
+// 7. ZERO-FILL RIGHT SHIFT ( >>> )
+
+// Commma: The comma operator , is one of the rarest and most unusual operators. 
+let d = (1 + 2, 3 + 4);
+alert( d ); // 7 (the result of 3 + 4)
+
+
+
+
