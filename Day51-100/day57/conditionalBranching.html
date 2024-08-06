@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> 'if'/'else' Statement </title> </head>
+        <body>
+            <script>
+   //if statement evaluates a condition in paranthesis & if the result is true, executes a block of code.
+   let year = prompdt( 'In which year was ECMAScript-2015 specification.')
+   if (year == 2015) alert ( 'You are right!' );
+   //if more than one statements
+   if ( year == 2015) {
+    alert( "that's correct!" );
+    alert( " You're so smart!" );
+   }
+   //Boolean Conversion
+   if (0) {//0 is falsy
+    }
+    if (1) {//1 is truthy
+        }
+    let time = (year == 2015);
+    if (time) { //pre-evaluated boolean can also be passed  
+    }    
+//The "else" clause
+let year1 = prompt('In which year was the ECMAScript-2015 specified?')
+if (year1 == 2015) {
+    alert( 'You guessed it right!' );
+} else {
+    alert( 'How can you be so wrong?' );
+}
+//"else if"
+let year2 = prompt('In which year was the ECMAScript-2015 specified?')
+if(year2 < 2015) {
+    alert('Too early');
+} else if (year > 2015) {
+    alert('Too late');
+} else {
+    alert('Exactly!');
+}
+//Example
+// let accessAllowed;
+// let age = prompt('How old are you?', '' );
+// if(age >18) {
+//     accessAllowed = true;
+// } else {
+//     accessAllowed = false;
+// }
+// alert(accessAllowed);
+
+<title2> Conditional operator ‘?’ </title2>
+// The operator is represented by a question mark ?. Sometimes it’s called “ternary”, because the operator has three operands. 
+let result= condition? vlaue1 : vlaue2;
+let accessAllowed = (age > 18) ? true : false;
+// Multiple?
+let age = prompt('age?', 18);
+
+let message = (age < 3) ? 'Hi, baby!' :
+  (age < 18) ? 'Hello!' :
+  (age < 100) ? 'Greetings!' :
+  'What an unusual age!';
+
+alert( message );
+<title3> Non-traditional use of '?' </title3>
+//Sometimes the question mark ? is used as a replacement for if:
+let company = prompt('Which company created JavaScript?', '')
+(company == 'Netscape') ?
+alert('Right!') : alert('Wrong.');
+//If-else statement
+if (company == 'Netscape') {
+  alert('Right!');
+} else {
+  alert('Wrong.');
+}
+</script> 
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>  Nullish coalescing operator '??' </title> </head>
+<body>
+    <script>
+//The nullish coalescing operator is written as two question marks ??.
+// The result of a ?? b is:
+// if a is defined, then a,
+// if a isn’t defined, then b.
+// In other words, ?? returns the first argument if it’s not null/undefined. Otherwise, the second one.
+let user;
+alert(user ?? "Anonymous"); //Anonymous as user is undefined
+let user1 = "John";
+alert(user ?? "Anonymous");//john as user is not null/undefined
+
+let firstName = null;
+let lastName = null;
+let nickName = "SuperCoder";
+alert(firstName ?? lastName ?? nickName ?? "Anonymous")
+
+//Comparison with ||
+// The important difference between them is that:
+// || returns the first truthy value.
+// ?? returns the first defined value.
+// In other words, || doesn’t distinguish between false, 0, an empty string "" and null/undefined. They are all the same – falsy values. 
+// If any of these is the first argument of ||, then we’ll get the second argument as the result.
+let height = 0;
+alert(height || 100); //100
+alert(height ?? 100); //0
+
+
+</script>
+</body> </html> 

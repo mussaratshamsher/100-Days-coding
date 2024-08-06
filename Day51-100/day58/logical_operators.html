@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Logical Operators </title> </head>
+<body>
+    <!-- There are four logical operators in JavaScript: || (OR), && (AND), ! (NOT), ?? (Nullish Coalescing).  -->
+    <script>
+        // ||(OR)
+        alert (true || true);
+        alert(false || true);
+        alert (true || false);
+        alert(false || false);
+
+        if(1 || 0) { //works like tru || false
+            alert('truthy!');
+        }
+    
+let hour = 9;
+if (hour < 10 || hour > 18) {
+    alert( 'The office is closed.')
+}
+//OR finds the first truthy value
+// Evaluates operands from left to right.
+// For each operand, converts it to boolean. If the result is true, stops and returns the original value of that operand.
+// If all operands have been evaluated (i.e. all were false), returns the last operand.
+alert( null || 1 ); // 1 (1 is the first truthy value)
+alert( null || 0 || 1 ); // 1 (the first truthy value)
+
+//Getting the first truthy value from a list of variables or expressions.
+let firstName = " ";
+let lastName = " ";
+let nickName = "SuperCoder"
+alert(firstName || lastName || nickName || "Anonymous") //Supercoder
+//Short-circuit evaluation.
+true || alert("not printed");
+false || alert("printed");
+
+//&& (AND) : finds the first falsy value
+//In classical programming, AND returns true if both operands are truthy and false otherwise:
+alert( true && true );   // true
+alert( false && true );  // false
+alert( true && false );  // false
+alert( false && false ); // false
+
+let hours = 12;
+let minute = 30
+if (hour == 12 && minute == 30) {
+    alert( 'The time is 12:30')
+}
+//The precedence of AND && operator is higher than OR ||.
+//So the code a && b || c && d is essentially the same as if the && expressions were in parentheses: (a && b) || (c && d).
+
+//! (NOT)
+// Converts the operand to boolean type: true/false.
+// Returns the inverse value.
+alert( !true); //false
+alert( !0); //true
+
+//A double NOT !! is sometimes used for converting a value to boolean type:
+alert( !! "non-empty string"); //true
+alert( !!null); //false
+//alternate way of above
+alert( Boolean("non-empty string")); //true
+alert (Boolean (null)); //false
+
+
+</script>
+</body> </html>
+
