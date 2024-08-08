@@ -1,0 +1,70 @@
+<DOCTYPE html>
+    <html>
+        <head>
+            <title> Switch Statement </title> </head>
+            <body>
+                <script>
+// A switch statement can replace multiple if checks.
+// It gives a more descriptive way to compare a value with multiple variants.
+//Syntax
+switch(x) {
+    case 'value1':
+        break
+        case 'value2':
+            break
+        default: 
+        break
+}
+let a = 2 + 2;
+switch (a) {
+    case 3: 
+    alert( 'Too small' );
+    break;
+    case 4: //case 4 will print as a = 4
+    alert ('Exactly!' );
+    break;
+    case 5:
+        alert ('Too big');
+    default:
+        alert ("I don't know such values");
+}
+//if break is removed from the above example then print result will be last three statement
+
+//Grouping of “case”
+// Several variants of case which share the same code can be grouped.
+// For example, if we want the same code to run for case 3 and case 5:
+let b = 3;
+switch (a) {
+    case 4:
+        alert('Right!');
+        break;
+        case 3:
+            case 5:
+                alert('Wrong!');
+                alert("Why don't you take class?");
+                break;
+                default: 
+                alert('The result is strange. Really.')
+}
+//Type matters
+let arg = prompt("Enter a value?");
+switch (arg) {
+    case '0':
+    case '1':
+        alert( 'One or zero' );
+        break;
+
+        case '2':
+            alert('Two');
+            break;
+
+        case 3:
+            alert( 'Never executes!');
+            break;
+            default:
+                alert( 'An unknown value' );      
+}
+
+</script>
+</body>
+</html>

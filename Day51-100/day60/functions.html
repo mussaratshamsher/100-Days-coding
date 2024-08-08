@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Functions </title> </head>
+<body>
+    <script>
+//Functions are the main “building blocks” of the program. They allow the code to be called many times without repetition.
+//Function Declaration: 
+function showMessage() {
+  alert( 'Hello everyone!' );
+}
+//function having parameters
+function name(parameter1, parameter2, ... parameterN) {
+ // body
+}
+name();
+//function is called by name with calling sign to log result
+
+//Local variables: A variable declared inside a function is only visible inside that function.
+function showMessage () {
+    let message  = "Hello, I'm javaScript!";
+    alert( message );
+}
+showMessage(); //Hello, I'm JavaScript!
+alert (message);//Error! the variable is local
+
+//Outer variable: A function can access an outer variables also
+let userName = 'John';
+function showMessage1 () {
+    let message = 'Hello, ' + userName;
+    alert(message);
+}
+showMessage1();
+
+//Global variables: Variables declared outside of any function, such as the outer userName in the code above, are called global.
+// A parameter is the variable listed inside the parentheses in the function declaration (it’s a declaration time term).
+// Argument: An argument is the value that is passed to the function when it is called (it’s a call time term).
+
+let userName1 = 'ali' //global variable & accessable everywhere in a program
+
+// Parameters
+// We can pass arbitrary data to functions using parameters.
+function showMessage3(a, b){ //a,b are parameters of functions
+    alert(a + ': ' + b)
+}
+showMessage3('ali', 'shan'); // values inside parenthesis are arguments
+showMessage3('`hina', 'noor')  // values inside parenthesis are arguments
+
+//Default values
+// If a function is called, but an argument is not provided, then the corresponding value becomes undefined.
+function showMessage4(a, b= "no text") {
+    alert(a + ": " +b);
+}
+showMessage4("Algorithm");
+showMessage4("JavaScript", "TypeScript"); //updating parmeter & default parameter value
+
+//Return in a function: The directive return can be in any place of the function. When the execution reaches it, the function stops, and the value is returned to the calling code (assigned to result above).
+// A function can return a value back into the calling code as the result.
+
+function sum(a,b){
+    return a+b;
+}
+let result = sum(1,2);
+alert(result);
+
+function checkAge(age) {
+  if (age >= 18) {
+    return true;
+  } else {
+    return confirm('Do you have permission from your parents?');
+  }
+}
+//An empty return is also the same as return undefined:
+
+function doNothing() {
+  return;
+}
+
+alert( doNothing() === undefined ); // true
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Loops </title> </head>
+        <body>
+            <script>
+      //Loops are a way to repeat the same code multiple times.
+     //While loop :While the condition is truthy, the code from the loop body is executed.
+     //syntax
+     while (condition) {
+        //code /loop body
+     } 
+     var i = 0;
+     while (i<3) {
+        alert(i);
+        i++;
+     }
+     //Any expression or variable can be a loop condition, not just comparisons: the condition is evaluated and converted to a boolean by while.
+     var j = 3;
+     while (j) {
+        alert(j);
+        j--;
+     } 
+    //  Curly braces are not required for a single-line body
+    //  If the loop body has a single statement, we can omit the curly braces {…}:
+var j = 3;
+while(j) alert(j--);
+
+//The “do…while” loop
+//The loop will first execute the body, then check the condition, and, while it’s truthy, execute it again and again.
+var i = 0;
+do {
+    alert(i);
+    i++;
+} while (i < 3);
+
+//The “for” loop
+//syntax
+for (begin; condition; step) {
+    //loop body
+}
+for (let i=0; i<3; i++) {
+    alert(i);
+}
+
+// Inline variable declaration
+// Here, the “counter” variable i is declared right in the loop. This is called an “inline” variable declaration. Such variables are visible only inside the loop.
+for (let i = 0; i<3; i++) {
+    alert(i);
+}
+
+//Breaking the loop
+// Normally, a loop exits when its condition becomes falsy.
+// But we can force the exit at any time using the special break directive.
+let sum = 0;
+while (true) {
+    let value = +prompt("Enter a number", '');
+    if (!value) break; //(*)
+    sum += value;
+}
+alert('Sum: ' +sum);
+// The break directive is activated at the line (*) if the user enters an empty line or cancels the input. 
+// It stops the loop immediately, passing control to the first line after the loop. Namely, alert.
+
+//Continue to the next iteration
+// The continue directive is a “lighter version” of break. It doesn’t stop the whole loop. Instead,
+//  it stops the current iteration and forces the loop to start a new one (if the condition allows).
+for (let i = 0; i< 10; i++) {
+    if ( i % 2 == 0 ) continue;
+    alert(i);
+}
+ </script>
+ </body>
+ </html>
+
+
+
+
+

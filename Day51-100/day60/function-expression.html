@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Function Expressions </title> </head>
+            <body>
+<script>
+
+    //Function declaration: A Function Declaration can be called earlier than it is defined.
+    function greeting(){
+        alert("Hello!");
+    }
+    greeting();
+
+//Function Expression: A Function Expression is created when the execution reaches it and is usable only from that moment.
+let greetings = function() {
+    alert( "Hello!");
+}
+greetings();
+ //Callback functions: 
+
+ function ask(question, yes, no) {
+  if (confirm(question)) yes()
+  else no();
+}
+
+ask(
+  "Do you agree?",
+  function() { alert("You agreed."); },
+  function() { alert("You canceled the execution."); }
+);
+</script>
+</body>
+    
+    </html>
+
+
+
+
+
+
+
+
+
