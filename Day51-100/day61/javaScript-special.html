@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title> JavaScript specials </title>
+    </head>
+    <body>
+        <script>
+//1.Statements are delimited with a semicolon
+alert('Hello'); alert('World');
+//2. a line-break is also treated as a delimiter, so that would also work.That’s called “automatic semicolon insertion”.
+alert('hello')
+alert('World')
+//3. Strict mode
+// To fully enable all features of modern JavaScript, we should start scripts with "use strict"
+'use strict';
+// The directive must be at the top of a script or at the beginning of a function body.
+
+// Without "use strict", everything still works,
+
+//4. variables
+// Can be declared using:
+
+// let
+// const (constant, can’t be changed)
+// var (old-style, will see later)
+// There are 8 data types:
+
+// number for both floating-point and integer numbers,
+// bigint for integer numbers of arbitrary length,
+// string for strings,
+// boolean for logical values: true/false,
+// null – a type with a single value null, meaning “empty” or “does not exist”,
+// undefined – a type with a single value undefined, meaning “not assigned”,
+// object and symbol – for complex data structures and unique identifiers, we haven’t learnt them yet.
+
+//5. Interaction
+// We’re using a browser as a working environment, so basic UI functions will be:
+
+// prompt(question, [default])
+// Ask a question, and return either what the visitor entered or null if they clicked “cancel”.
+// confirm(question)
+// Ask a question and suggest to choose between Ok and Cancel. The choice is returned as true/false.
+// alert(message)
+// Output a message.
+let userName = prompt("Your name?", "Alice");
+let isTeaWanted = confirm("Do you want some tea?");
+
+alert( "Visitor: " + userName ); // Alice
+alert( "Tea wanted: " + isTeaWanted ); // true
+//6. Operators
+// Arithmetic  
+// Assignments
+// Bitwise
+// Conditional
+// Logical
+// Nullish coalescing operator
+// Comparision
+//7. Loops
+//3-types of loops
+// 1
+while (condition) {
+}
+
+// 2
+do {
+} while (condition);
+
+// 3
+for(let i = 0; i < 10; i++) {
+}
+//Switch construct
+// The “switch” construct can replace multiple if checks. It uses === (strict equality) for comparisons.
+let age = prompt('Your age?', 18);
+
+switch (age) {
+  case 18:
+    alert("Won't work"); // the result of prompt is a string, not a number
+    break;
+
+  case "18":
+    alert("This works!");
+    break;
+
+  default:
+    alert("Any value not equal to one above");
+}
+// Functions
+// 3ways of creating function
+// i. function Declaration
+// ii. function Expression
+// iii. arrow function
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
