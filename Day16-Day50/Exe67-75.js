@@ -96,3 +96,4 @@ function compoundOperators() {
     console.log("After division x= ", x); //shows After division
 }
 compoundOperators(); // shows each print taking updated value of x after operation
+//# sourceMappingURL=Exe67-75.js.map

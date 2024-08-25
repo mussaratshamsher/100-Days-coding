@@ -95,3 +95,4 @@ if (alienColor === "Red") {
     console.log("you just earned 5 points.");
 }
 ; // version that fails
+//# sourceMappingURL=Exe21-25.js.map

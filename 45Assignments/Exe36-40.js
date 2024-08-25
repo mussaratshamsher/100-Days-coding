@@ -62,3 +62,4 @@ let album3 = make_album("Ayza", "The third Album", 12);
 console.log(album1);
 console.log(album2);
 console.log(album3);
+//# sourceMappingURL=Exe36-40.js.map

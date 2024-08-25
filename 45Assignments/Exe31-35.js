@@ -65,3 +65,4 @@ animals.forEach(animal => {
     console.log(`${animal} would make a great pet.`);
 });
 console.log("Loyality is their common attribute.");
+//# sourceMappingURL=Exe31-35.js.map

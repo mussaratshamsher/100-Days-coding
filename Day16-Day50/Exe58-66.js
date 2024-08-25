@@ -89,3 +89,4 @@ function checkBothTrue(value1, value2) {
 }
 // triying with true & false
 console.log(checkBothTrue(true, false));
+//# sourceMappingURL=Exe58-66.js.map

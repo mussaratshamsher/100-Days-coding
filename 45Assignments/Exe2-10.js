@@ -45,3 +45,4 @@ let personName1 = "Mussarat";
 console.log(`${personName1} says, \"Time does not change people, time reveals true faces of the people."`);
 //program2 to change name into lower case
 console.log("lowercase:", personName1.toLowerCase());
+//# sourceMappingURL=Exe2-10.js.map

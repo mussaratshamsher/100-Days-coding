@@ -74,3 +74,4 @@ let num1 = -5;
 let num2 = 5;
 const difference = Math.abs(num1 - num2);
 console.log(difference);
+//# sourceMappingURL=Exe94-102.js.map

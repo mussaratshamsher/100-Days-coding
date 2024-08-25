@@ -1,0 +1,1 @@
+{"version":3,"file":"function-annotation.js","sourceRoot":"","sources":["function-annotation.ts"],"names":[],"mappings":";AACA,gCAAgC;;AAEhC,4BAA4B;AAC5B,SAAS,sBAAsB,CAAE,MAAc,EAAE,KAAa;IAC9D,OAAO,MAAM,GAAG,KAAK,CAAA;AACrB,CAAC;AACD,2DAA2D;AAC3D,IAAI,MAAM,GAAG,sBAAsB,CAAC,CAAC,EAAC,CAAC,CAAC,CAAC;AACzC,OAAO,CAAC,GAAG,CAAC,gCAAgC,MAAM,EAAE,CAAC,CAAC"}

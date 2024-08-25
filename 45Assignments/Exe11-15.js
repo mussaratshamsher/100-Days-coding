@@ -28,3 +28,4 @@ console.log(dontCome, "Cannot come to dinner.");
 guestlist.splice(0, 1, "Anaya");
 // message for new guest list
 guestlist.forEach(guest => console.log(`Assalam-o-Alaikum! ${guest}, would you like to dinner with me?`));
+//# sourceMappingURL=Exe11-15.js.map

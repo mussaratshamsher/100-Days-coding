@@ -76,3 +76,4 @@ function replaceJavascriptWihTypescript(sentence) {
 }
 //output
 console.log(replaceJavascriptWihTypescript("There is a comfort after Each Trouble."));
+//# sourceMappingURL=Exe76-84.js.map

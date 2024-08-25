@@ -119,3 +119,4 @@ let grades = [75, 80, 87, 90, 92];
 let aveGrade = grades.reduce((total, grade) => total + grade, 0) / grades.length;
 // log to get outPut
 console.log(aveGrade);
+//# sourceMappingURL=Exe46-57.js.map

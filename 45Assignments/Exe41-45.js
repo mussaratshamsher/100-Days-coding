@@ -68,3 +68,4 @@ function make_car(manufacturer, model, otherFeatures) {
 }
 console.log(make_car("Toyota", "Corolla", { Color: "Black", Year: 2020 }));
 console.log(make_car("Ford", "Fiesta", { Color: "Blue", Sunroof: true }));
+//# sourceMappingURL=Exe41-45.js.map

@@ -54,3 +54,4 @@ console.log("\n Exe:20");
 //Think of something you could store in an array.
 let countries = ["Japan", "Iceland", "Canada", "Plastine"];
 console.log("Countries that i want to visit are:", countries);
+//# sourceMappingURL=Exe16-20.js.map

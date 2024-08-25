@@ -100,3 +100,4 @@ const traditionalVsArrow = {
 traditionalVsArrow.traditionalFunction(); // Logs "traditionalVsArrow value"
 //traditionalVsArrow.arrowFunction(); // Likely undefined, depending on the outer scope's 'this.value'
 // This code snippet illustrates the difference in how 'this' is determined in traditional functions versus arrow functions.
+//# sourceMappingURL=Exe121-129.js.map
